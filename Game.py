@@ -10,19 +10,19 @@ if __name__== "main":
         board = Board()
         starter = Starter(board)
         player = starter
-        opponent = Opponent()
+        opponent = Opponent(board)
 
         while not end_condition:
             board.draw_board()
             end_condition = board.check_board()
-            if end == True:
+            if end_condition == True:
                 break
             print("%s choose where to place a cross", player.player_name)
-            player.choosing_next_move
+            player.choosing_next_move()
             print()
             board.draw_board()
-            end = board.check_board()
-            if end == True:
+            end_condition = board.check_board()
+            if end_condition == True:
                 break
             opponent()
             print()
