@@ -1,3 +1,3 @@
 # Lab03
 
-TicTacToe game. Status: WIP
+TicTacToe game. Status: SCRAPPED
